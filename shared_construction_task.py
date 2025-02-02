@@ -3,12 +3,12 @@ def count_shares():
     amount = 0
     shares = []
     for _ in range(total_shares):
-        share = int(input())
+        share = float(input())
         amount += share
         shares.append(share)
 
     for share in shares:
-        print(f"{share / amount:.{3}f}")
+        print(f"{share / amount:.3f}")
 
 
 count_shares()
